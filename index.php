@@ -6,6 +6,9 @@
 </head>
 <body>
 	<div class="wrap">
+		<form class="add-new-task" autocomplete="off">
+			<input type="text" name="new-task" placeholder="Add a new item..." />
+		</form>
 		<div class="task-list">
 			<ul>
 
@@ -32,9 +35,6 @@
 				
 			</ul>
 		</div>
-		<form class="add-new-task" autocomplete="off">
-			<input type="text" name="new-task" placeholder="Add a new item..." />
-		</form>
 	</div><!-- #wrap -->
 </body>
 	<!-- JavaScript Files Go Here -->
