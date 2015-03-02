@@ -15,7 +15,7 @@
 			<?php 
 				require("includes/connect.php");
 
-				$query = mysql_query("SELECT * FROM tasks ORDER BY date ASC, time ASC");
+				$query = mysql_query("SELECT * FROM tasks WHERE done=0 ORDER BY date ASC, time ASC");
 				$numrows = mysql_num_rows($query);
 
 				if($numrows>0){
@@ -23,9 +23,10 @@
 
 						$task_id = $row['id'];
 						$task_name = $row['task'];
+						$task_date = $row['date'];
 
 						echo '<li>
-								<span>'.$task_name.'</span>
+								<span>'.$task_name.', '.$task_date.'</span>
 								<img id="'.$task_id.'" class="delete-button" width="10px" src="images/close.svg" />
 							  </li>';
 					}
