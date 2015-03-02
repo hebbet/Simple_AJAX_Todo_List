@@ -38,7 +38,7 @@
 	</div><!-- #wrap -->
 </body>
 	<!-- JavaScript Files Go Here -->
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/jquery-2.1.3.min.js"></script>
 	<script>
 		
 		add_task(); // Call the add_task function
